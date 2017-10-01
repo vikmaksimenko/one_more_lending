@@ -11,13 +11,16 @@
     <meta name="developer" content="TemplateOcean">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- FAV AND TOUCH ICONS   -->
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- Image Slider -->
@@ -33,7 +36,7 @@
         <![endif]-->
     <style type="text/css" media="screen">
     .inner {
-        height: 420px;
+        min-height: 420px;
     }
 
     .overlay-color {
@@ -42,6 +45,13 @@
 
     .wages tr td:first-child {
         font-weight: bold;
+    }
+
+    .okayNav-header__logo p {
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
     }
     </style>
 </head>
@@ -52,21 +62,20 @@
     <header id="header" class="okayNav-header navbar-fixed-top main-navbar-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                    <a class="okayNav-header__logo navbar-brand" href="#">
-                            <img src="images/logo.png" alt="" class="logo-1 img-responsive">
-                            <img src="images/logo-dark.png" alt="" class="logo-2 img-responsive">
-                        </a>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-8">
+                    <a class="okayNav-header__logo navbar-brand" href="">
+                        <p class="logo-1 img-responsive">Sea Breeze</p>
+                        <p class="logo-2 img-responsive">Sea Breeze</p>
+                    </a>
                 </div>
                 <!-- End: .col-xs-3 -->
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-4">
                     <nav role="navigation" class="okayNav pull-right" id="js-navbar-menu">
                         <ul id="navbar-nav" class="navbar-nav">
-                            <li><a class="btn-nav" href="#features">Features</a></li>
-                            <li><a class="btn-nav" href="#work">work</a></li>
-                            <li><a class="btn-nav" href="#testimnial">Testimnial</a></li>
-                            <li><a class="btn-nav" href="#pricing">pricing</a></li>
-                            <li><a class="btn-nav" href="#contact">contact</a></li>
+                            <li><a class="btn-nav" href="#about">About us</a></li>
+                            <li><a class="btn-nav" href="#services">Services</a></li>
+                            <li><a class="btn-nav" href="#wages">Wages </a></li>
+                            <li><a class="btn-nav" href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -81,12 +90,12 @@
         ============================= -->
     <!-- Start: Header Section
         ================================ -->
-    <section class="header-section-1 bg-image-1 header-js" id="header" style="height: 100vh;">
+    <section class="header-section-1 bg-image-1 header-js" id="header-section" style="height: 100vh;">
         <div class="overlay-color">
             <div class="container">
-                <div class="row section-separator">
+                <div class="row section-separator" style="padding: 0;">
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                        <div class="part-inner text-center">
+                        <div class="part-inner text-center" style="margin-top: calc(50vh + 40px); transform: translateY(-50%);">
                             <!--  Header SubTitle Goes here -->
                             <h1 class="title">Welcome to Sea Breeze Crewing Agency</h1>
                             <!-- <div class="detail">
@@ -95,7 +104,7 @@
  -->
                             <!-- Button Area -->
                             <div class="btn-form btn-scroll">
-                                <a href="#pricing" class="btn btn-fill right-icon">Get Started <i class="icon icons8-advance"></i></a>
+                                <a href="#wages" class="btn btn-fill right-icon">Get Started <i class="icon icons8-advance"></i></a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +120,7 @@
         ================================ -->
     <!-- Start: Features Section 7
         ====================================== -->
-    <section class="features-section-7 content-half background-light" style="height: 100vh;">
+    <section class="features-section-7 content-half background-light" id="about" style="min-height: 100vh;">
         <div class="container-half container-half-left background-light"></div>
         <div class="container-half container-half-right cover" style="background-image: url(images/background-4.jpg);"></div>
         <div class="container">
@@ -135,7 +144,7 @@
         ================================ -->
     <!-- Start: Features Section 1
         ====================================== -->
-    <section class="features-section-1 relative background-semi-dark" id="features">
+    <section class="features-section-1 relative background-semi-dark" id="services">
         <div class="container">
             <div class="row section-separator">
                 <!-- Start: Section Header -->
@@ -205,7 +214,7 @@
         ======================================-->
     <!-- Start: Features Section 8
         ====================================== -->
-    <section class="features-section-8 relative background-light" id="work">
+    <section class="features-section-8 relative background-light" id="wages">
         <div class="container">
             <div class="row section-separator">
                 <!-- Start: Section Header -->
@@ -315,19 +324,21 @@
                         <div class="section-header col-xs-12">
                             <h2 class="section-heading">Contact Us</h2>
                         </div>
-                        <p><img src="images/lg.png" alt="" class="img-responsive" style="margin: 0 auto;"></p>
-                        <ul class="list-unstyled" style="width: 50%; margin: 0 auto;">
+                        <p><img src="images/lg.png" alt="" class="img-responsive" style="margin: 0 auto; height: 150px;" /></p>
+                        <!-- <p><img src="" alt=""></p> -->
+                        <div id="map" style="height: 500px; margin: 50px 0;">
+                        </div>
+                        <ul class="list-unstyled list-unstyled col-md-8 col-md-offset-2" style="float: none;">
                             <li>
                                 <i class="icon features-icon icons8-map-marker"></i> Ukraine ,Odessa region , Izmail city,
                                 <br> Pushkina Street 45
-                                <br> Office …….
                             </li>
                             <li>
-                                <i class="icon features-icon icons8-email"></i> email@email.com
+                                <i class="icon features-icon icons8-email"></i>breeze.crewing@gmail.com
                             </li>
-                            <li>
+                           <!--  <li>
                                 <i class="icon features-icon icons8-two-smartphones"></i> 123-456-78-90
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -345,6 +356,7 @@
             <div class="row section-separator text-center">
                 <div class="copyright">
                     <p>Based on template by <a href="https://templateocean.com">TemplateOcean</p> <!-- You can keep the link to show us some support :) -->
+                    <p>All rights reserved</p>
                     </div>
 
                 </div><!-- End: .section-separator  -->
@@ -362,10 +374,15 @@
         <script src="js/plagin-js/jquery-1.11.3.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/plagin-js/plagin.js"></script>
-
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR0zaTxRmD8Jkt80Q40Mtw44uSeHruiPk&callback=initMap" async defer></script>
         <!-- Custom Script 
         ==========================================-->
         <script src="js/custom-scripts.js"></script>
+
+
+        
+        
+
 
     </body>
 

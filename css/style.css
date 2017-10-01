@@ -849,12 +849,14 @@ h6 {
   padding-bottom: 20px;
   margin-left: 0px;
 }
+
 .main-navbar-top .navbar-brand img {
   display: block;
   height: 100%;
 }
 .main-navbar-top .navbar-brand .logo-1 {
   display: block;
+  color: #fff;  
 }
 .main-navbar-top .navbar-brand .logo-2 {
   display: none;
@@ -990,7 +992,7 @@ h6 {
   margin-bottom: 70px;
 }
 .header-section-1 .section-separator {
-  padding-top: 187px;
+  /*padding-top: 187px;*/
 }
 .header-section-1 .title {
   color: #ffffff;
@@ -1004,7 +1006,7 @@ h6 {
   line-height: 30px;
 }
 .header-section-1 .btn-form {
-  margin-top: 70px;
+  margin-top: 5vh;
 }
 /**
  * ====================================

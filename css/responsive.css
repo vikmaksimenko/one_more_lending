@@ -50,9 +50,9 @@
   .features-section-7 .inner {
     padding-right: 0px;
   }
-  .features-section-7 .section-heading,
+  /*.features-section-7 .section-heading,*/
   .features-section-7 .detail p {
-    text-align: center;
+    text-align: justify;
   }
   .pricing-table .each-table {
     margin-bottom: 30px;
