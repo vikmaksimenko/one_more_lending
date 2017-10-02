@@ -1085,7 +1085,7 @@ h6 {
  * ====================================
  */
 .features-section-3 .testimonial-wrapper .item {
-  padding: 15px 0;
+  padding: 15px;
 }
 .features-section-3 .testimonial-wrapper .item .image-outer {
   display: inline-block;
@@ -1102,8 +1102,8 @@ h6 {
   -o-border-radius: 50% 50% 50% 50% ;*/
 }
 .features-section-3 .testimonial-wrapper .item .image-outer img {
-  width: auto;
-  height: 400px;
+  width: 100%;
+  height: auto;
 /*  border-radius: 50% 50% 50% 50% ;
   -webkit-border-radius: 50% 50% 50% 50% ;
   -moz-border-radius: 50% 50% 50% 50% ;
